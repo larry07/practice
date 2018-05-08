@@ -11,10 +11,12 @@ https://www.cnblogs.com/alongwaytogo/p/5111516.html
  ```
 
 该模块的.C 文件中有以下定义：
-
+```
     #define xxx_GLOBALS
     ＃include "includes.h"
+```
 如
+```
     #ifdef OS_GLOBALS
     #define OS_EXT
     #else
@@ -23,7 +25,9 @@ https://www.cnblogs.com/alongwaytogo/p/5111516.html
     OS_EXT INT32U OSIdleCtr;
     OS_EXT INT32U OSIdleCtrRun;
     OS_EXT INT32U OSIdleCtrMax;
+```
 同时，uCOS_II.H 有中以下定义：
-
+```
     #define OS_GLOBALS
-    ＃i nclude “includes.h”
+    ＃include “includes.h”
+```
