@@ -2,11 +2,13 @@ https://www.cnblogs.com/alongwaytogo/p/5111516.html
 
  .H 文件中每个全局变量都加上了xxx_EXT 的前缀  xxx代表模块的名字。   
  定义全局宏。
+ ```
     #ifdef xxx_GLOBALS
     #define xxx_EXT
     #else
     #define xxx_EXT extern
     #endif
+ ```
 
 该模块的.C 文件中有以下定义：
 
